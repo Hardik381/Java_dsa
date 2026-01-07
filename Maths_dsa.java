@@ -36,6 +36,20 @@ public class Maths_dsa {
         return rslt;
     }
 
+    // To convert any base to decimal
+
+    public static void convertToDec(String num, int base) {
+        int rslt = 0;
+        int pos = 0;
+        int length = num.length();
+        for (int i = length - 1; i >= 0; i--) {
+            int digit = num.charAt(i) - '0';
+            rslt = rslt + digit * (int) Math.pow(base, pos);
+            pos++;
+        }
+        System.out.println("any base to decimal " + rslt);
+    }
+
     // --------------------------------------------------
     // Reverse a number
     // Example: 123 -> 321, -12 -> 21
@@ -187,5 +201,7 @@ public class Maths_dsa {
 
         // Fast exponentiation
         System.out.println(fastExpo(2, 4));
+
+        convertToDec("1011", 8);
     }
 }
