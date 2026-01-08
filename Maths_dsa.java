@@ -176,10 +176,10 @@ public class Maths_dsa {
     public static void main(String[] args) {
 
         // Digit counting
-        System.out.println(calDigits(78456));
+        System.out.println(calDigits(100));
 
         Maths_dsa m1 = new Maths_dsa();
-        int count = m1.calDigits1(0);
+        int count = m1.calDigits1(8);
         System.out.println(count);
 
         // Append digit operations
